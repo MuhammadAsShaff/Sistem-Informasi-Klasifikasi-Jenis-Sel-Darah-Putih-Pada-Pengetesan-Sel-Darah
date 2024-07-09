@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Header from './components/Header';
+import MainSection from './components/MainSection';
+import InformationSection from './components/InformationSection';
+import Section3 from './components/section3';
+import ManfaatSel from './components/ManfaatSel';
+import ManfaatWebsite from './components/ManfaatWeb';
+import SectionArsitektur from './components/sectionArsitektur';
+import SectionDosen from './components/sectionDosen';
+import SectionPembuat from './components/SectionAnggota';
+import SectionUpload from './components/sectionUpload';
+import Footer from './components/Footer'; // Ensure the path matches the actual file location
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <MainSection />
+      <InformationSection />
+      <Section3 />
+      <ManfaatSel />
+      <ManfaatWebsite />
+      <SectionArsitektur />
+      <SectionDosen/>
+      <SectionPembuat/>
+      <SectionUpload/>
+      <Footer/>
     </div>
   );
-}
+};
 
 export default App;
